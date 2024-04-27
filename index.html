@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - DIO</title>
+</head>
+<body>
+    <h1>Ensinamentos do Módulo I - Primeiros Passos com HTML<sup>(1, 2)</sup>: Seguindo o desafio!</h1>
+    <hr />
+
+    <h2 id="sumario">Índice</h2>
+    <ul>
+        <li><a href="#historia">História da Web</a></li>
+        <li><a href="#clientes">O que são <i>Clients</i>?</a></li>
+        <li><a href="#servicos">O que são <i>Servers</i>?</a></li>
+        <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+        <li><a href="#diferencas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <h2 id="historia">História da Web</h2>
+    <small><a href="#sumario">▲</a></small>
+    <h3>História dos Computadores</h3>
+    <p>A palavra <strong>computador</strong> vem do verbo <i>computar</i> que, por sua vez, significa <strong>calcular</strong>. 
+        Sendo assim, podemos pensar que a criação de computadores começa na idade antiga, 
+        já que a relação de contar já intrigava os homens.</p>
+    <p>Dessa forma, uma das primeiras máquinas de computar foi o <u>ábaco</u>, instrumento mecânico 
+        de origem chinesa criado no século V a.C.</p>
+    <p>Assim, ele é considerado o <strong>primeiro computador</strong>, uma espécie de calculadora que realizava 
+        operações algébricas.</p>
+    <p>No século XVII, o matemático escocês John Napier foi um dos responsáveis pela invenção da 
+        <u>régua de cálculo</u>. Trata-se do primeiro instrumento analógico de contagem capaz de efetuar 
+        cálculos logaritmos. Essa invenção foi considerada a mãe das calculadoras modernas.</p>
+    <p>Por volta de 1640, o matemático francês Pascal inventou a primeira máquina de calcular automática. 
+        Essa máquina foi sendo aperfeiçoada nas décadas seguintes até chegar no conceito que conhecemos hoje.</p>
+    <p>A primeira calculadora de bolso capaz de efetuar os quatro principais cálculos matemáticos, 
+        foi criada por Gottfried Wilhelm Leibniz.<sup>(3)</sup></p>
+    <p>Pensando nos dias atuais temos marcos que vem crescendo desde o século XX por datas, que são, em<sup>(5)</sup>:</p>
+    <ul>
+        <li>1946: criação do primeiro computador eletrônico de grande escala do mundo, o ENIAC 
+            (Electrical Numerical Integrator and Calculator);</li>
+        <li>1951 a 1959: surgimento dos computadores de 1° geração com capacidade de calcular com um velocidade de 
+            milésimo de segundos, sendo programados em linguagem de máquina;</li>
+        <li>1959 a 1965: surgimento dos computadores de 2° geração com capacidade de calcular com um velocidade de 
+            microssegundos através de programação em linguagem montadora;</li>
+        <li>1965 a 1975: computadores de 3° geração, compostos de miniaturizados e montados em um único CHIP com 
+            capacidade de cálculos em nanosegundos, em linguagem de programação de alto nível;</li>
+        <li>1975 a 1981: criados computadores da 4° geração com tendência da anterior em componentes miniaturizados 
+            e aperfeiçoamento de seus Circuitos Integrados (CI). As linguagens utilizadas eram de altíssimo nível, 
+            orientada para uma problemática;</li>
+        <li>1990: são lançados softwares de melhor qualidade e com capacidade de processar as informações com maior 
+            rapidez;</li>
+        <li>2000: após virada do milênio os computadores continuaram a seguir a tendência de miniaturização de seus 
+            componentes e, tornando dessa forma os computadores mais maleáveis e práticos nas tarefas diárias. 
+            Além disso, há um investimento maciço em seu design.</li>
+        <li>Tempos de hoje: vivemos a 5° geração que é composta por todos os dispositivos já criados ou em processo de 
+            criação que incorporam tecnologias como inteligência artificial, computação quântica ou 
+            nanotecnologia.<sup>(6)</sup></li>
+    </ul>
+    <h3>História da Internet</h3>
+    <p>Em paralelo se vive o surgimento da internet, visto que hoje é o maior meio de comunicação mundial, na década de 
+        1960 por meio da Arpanet, rede criada com fins militares. "O crescimento dessa rede permitiu que seu uso se 
+        estendesse para fins privados e comerciais. A internet chegou ao Brasil somente no final da década de 1980.</p>
+    <p>Nada dessas revoluções não teriam sido possíveis se estes nomes não tivessem pensado no futuro:</p>
+    <ul>
+        <li>Grace Brewster Murray Hopper nasceu em Nova York, EUA, em 1906. Sendo a criadora das primeiras linguagens 
+            computacionais “humanas”, Flow-Matic (base do COBOL), que possibilitou a interpretação computacional de 
+            comando em inglês no lugar de apenas números e símbolos<sup>(7)</sup>. Também foi a criadora do termpo "bug".</li>
+        <li>Joseph Carl Robnett Licklider, nascido em Saint-Louis em 1915, cientista americano do MIT 
+            (Massachussets Institute of Technology), em 1962 propôs pela primeira vez, uma rede global de computadores<sup>(8)</sup>.</li>
+        <li>Robert Elliot (Bob) Kahn, nascido em 1938, pioneiro, engenheiro e cientista da computação americano, 
+            junto com Vint Cerf, inventou o Protocolo de Controle de Transmissão (TCP) e o Protocolo de Internet (IP), 
+            que fazem construir a arquitetura fundamental no coração da internet<sup>(9)</sup>.</li>
+        <li>Timothy John Berners-Lee nasceu em Londres, Inglaterra, em 8 de junho de 1955. Ele é um físico britânico, 
+            cientista da computação e professor do MIT (Instituto de Tecnologia de Massachusetts, em inglês). 
+            Seu cargo mais conhecido é ser o criador da World Wide Web, o famoso termo técnico WWW<sup>(10)</sup>.
+            Popularizou o http e html.</li>
+        <li>Marc Andreessen nasceu a 9 de julho de 1971 na cidade de New Lisbon, estado do Wisconsin, Estados Unidos da América. 
+            Durante a sua formação, estagiou na empresa IBM e trabalhou no National Center for Supercomputing Applications (NCSA), 
+            da mesma Universidade, onde, em colaboração com Eric Bina, desenvolveu o software Mosaic, um navegador Web acessível 
+            que integrava gráficos e podia funcionar em diferentes tipos de computadores, disponibilizado ao público a partir 
+            de 1993. Já em 1994, junta-se a Jim Clark, na companhia Enterprise Integration Technologies, e fundam a Mosaic 
+            Communications Corporation, que em novembro do mesmo ano renomeiam para Netscape, de forma a evitar conflitos legais 
+            com o NCSA pela posse do nome Mosaic<sup>(11)</sup>.</li>
+        <li>Bill Gates nasceu em Seattle, Washington, em 28 de outubro de 1955. Em 1975, ele e Paul Allen fundaram a Microsoft, 
+            que se tornaria uma das maiores empresas de tecnologia do mundo.<sup>(12)</sup>.</li>
+        <li>Steven Paul Jobs, nascido no dia 24 de março de 1955 em São Francisco, Califórnia, foi um dos fundadores da 
+            Apple junto com Steve Wozniak e Mike Markkula. Ele é reconhecido como um dos maiores visionários e da 
+            história da tecnologia pessoal<sup>(13)</sup>.</li>
+        <li><sup>(14)</sup></li>
+    </ul>
+    
+    <h2 id="clientes">O que são <i>Clients</i>?</h2>
+    <small><a href="#sumario">▲</a></small>
+    <p>É o cliente quem sempre inicia a comunicação com o servidor. O cliente mais conhecido é o navegador.        
+        Quando acessamos um site pelo navegador, uma requisição é disparada pela internet para o computador no qual 
+        esse site está hospedado. Chamamos as aplicações que agem em nome do usuário, assim como o navegador, 
+        de <mark>user-agent</mark>. Após enviar uma requisição, o <mark>user-agent</mark> aguarda até que 
+        haja uma resposta do servidor e então a comunicação se encerra. Para obter um novo recurso do servidor o 
+        cliente deve iniciar uma nova requisição<sup>(14)</sup>.</p>
+    <h3>Navegadores Web</h3>
+    <p>Um navegador web – também conhecido como browser – é um programa instalado no sistema operacional do seu notebook, 
+        desktop ou um App do smartphone ou tablet e que tem por função o acesso e exibição de páginas de sites na web. 
+        O conceito inicial manteve-se ao longo dos anos de evolução, porém logo mostrou que as possibilidades da Internet 
+        além de um site, execução de sistemas elaborados em diferentes linguagens de programação, mas cuja interface está 
+        disponível por meio de um navegador tal como é em um site. Os navegadores evoluíram bastante desde sua criação e 
+        acabaram sendo a porta de entrada para uma série de funcionalidades, graças aos AddOns ou complementos, os quais 
+        conferem aos mesmos, mais do que o simples acesso a um website. Hoje, os principais navegadores utilizados 
+        atualmente, são o Google Chrome, Safari, Mozilla Firefox, Microsoft Edge, Opera e Internet Explorer. Porém, apesar 
+        de todos esses navegadores, a partir da década de 90 – foi criado o W3C, que é uma organização com o objetivo 
+        de congregar diferentes empresas com vínculos na Internet e que deveria ser responsável por estabelecer padrões 
+        adotados para a criação e a interpretação de conteúdos para a Web.</p>
+    <h3>Aplicação Web</h3>
+    <p>A aplicação web é um software que roda na internet, em vez de funcionar com base em sistemas operacionais. Dessa 
+        forma, é um sistema com funcionalidades completas, que foi programado a partir de requisitos e dos princípios 
+        da engenharia de software. Contudo, seu grande diferencial é que ele é feito para funcionar na internet. Portanto,
+        as aplicações funcionam como um serviço, oferecendo alguma função importante para os usuários<sup>(15)</sup>.</p>
+    <h3>Dispositivos Móveis</h3>
+    <p>Um dispositivo móvel, designado popularmente em inglês por handheld é um computador de bolso habitualmente equipado 
+        com um pequeno ecrã (output)e um teclado em miniatura (input). No caso dos PDAs, o output e o input combinam-se 
+        num ecrã táctil. Atualmente em nossa sociedade é muito comum encontrar diversos modelos de aparelhos celulares nas 
+        ruas e avenidas. O grande avanço da tecnologia móvel tem causado uma grande dependência desses aparelhos em todos 
+        as pessoas, cada dia que passa fica mais difícil de se imaginar sem utilizar essas ferramentas que acabam sendo 
+        essenciais no dia-a-dia de todos, seja para responder e-mails , ouvir musicas, utilizar aplicativos que ajudam 
+        nas atividades mais corriqueiras como academia, agenda e etc. Na ótica do usuário os celulares e dispositivos 
+        móveis são sinônimos de conforto e praticidade, assim, o comercio de dispositivos moveis tornou se algo 
+        extremamente lucrativo sendo alvo de grandes empresas tanto de tecnologia como de serviços<sup>(16)</sup>.</p>
+
+    <h2 id="servicos">O que são <i>Servers</i>?</h2>
+    <small><a href="#sumario">▲</a></small>    
+    <p>O <u>papel do servidor web</u> é receber uma requisição e devolver uma resposta para o cliente. Geralmente o 
+        servidor não envia dados se o cliente não disparar primeiro uma requisição. O servidor é 
+        um ou mais computadores com um único endereço como //www.qualquersite.com.br. Nestes computadores podem 
+        ser hospedados documentos, imagens, áudio, vídeo, etc. Geralmente o servidor também hospeda programas que 
+        atendem as requisições dos clientes e as processam. Chamamos esses programas de <mark>web server</mark>, 
+        ou servidor web. É com um web server que nos comunicamos, sendo o computador no qual ele está instalado 
+        parte da infraestrutura que o conecta a internet. O web server geralmente é capaz de executar aplicações 
+        escritas em linguagens como PHP, C#, Java, etc. Por exemplo, um servidor executando o PHP pode delegar a 
+        esse programa a tarefa de atender as requisições criando páginas <u>HTML</u> a partir de scripts 
+        escritos nessa linguagem<sup>(14)</sup>.</p>
+    <h3>Tipos de servidores<sup>(17)</sup>:</h3>
+    <p>
+    <ul>
+        <li>Servidor de aplicação ou application server</li>
+        <li>Servidor de Arquivos</li>
+        <li>Servidor de banco de dados</li>
+        <li>Servidor de mídia</li>
+        <li>Servidor de email</li>
+        <li>Servidor de backup</li>
+        <li>Servidor FTP</li>
+        <li>Servidor Proxy</li>
+        <li>Servidor Web</li>
+        <li>Outros tipos de servidores:</li>
+        <p>servidores NAS, servidores dns, telnet e de impressão
+    </ul>
+    </p>
+    <h3>Softwares e Hardware dos Servidores<sup>(18)</sup></h3>
+    <h4>Sistemas Operacionais</h4>
+    <p>Todo servidor requer um sistema operacional para funcionar adequadamente, independentemente de ser um servidor 
+        desktop para um escritório pequeno ou um servidor blade em um grande datacenter responsável por um cluster de 
+        armazenamento. O sistema operacional é o software fundamental que administra o sistema e deve ser escolhido 
+        com base nas necessidades específicas de cada aplicação. Entre os principais sistemas operacionais encontram-se 
+        distribuições Linux como Red Hat, Unix, Solaris, e várias versões do Windows Server da Microsoft.</p>
+    <h4>Sistemas Webs</h4>
+    <p>Embora abranja uma variedade de funcionalidades, o termo "servidor web" geralmente se refere a sistemas que 
+        oferecem serviços como a entrega de conteúdo (como sites) acessíveis por navegadores como Internet Explorer, 
+        Google Chrome ou Safari, através do protocolo HTTP (Hypertext Transfer Protocol). Um servidor web pode ser 
+        um sistema dedicado construído especificamente para essa finalidade (com hardware e software dedicados), 
+        ou pode ser uma aplicação (instância) dentro de um sistema maior. Sua principal função é hospedar e executar 
+        aplicações escritas em HTML. Visto que a maioria dos servidores web utilizam em seus hosts físicos sistemas 
+        operacionais baseados em Linux como o Apache e o Nginx, ou ainda sistemas como o IIS Microsoft e o OHS 
+        Oracle.</p>
+
+    <h2 id="estrutura">O que é o HTML<sup>(19)</sup></h2>
+    <small><a href="#sumario">▲</a></small>    
+    <p>O HTML é responsável por demarcar a estrutura de uma página da web. Existente desde 1991 e atualmente está na 
+        versão 5, é formada por um conjunto de elementos, ou seja, os hipertextos, que se conectam entre si formando 
+        a página. Os elementos tags HTML são utilizados para informar ao navegador que tipo de estrutura é essa que 
+        está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros. Portanto, para que um 
+        documento seja interpretado pelo navegador, é necessário que o arquivo tenha a extensão .html e, a partir 
+        disso, poderá ser exibido por qualquer navegador web.</p>
+
+    <h3>Como é uma estrutura básica de um HTML?</h3>
+    <p>As tags são formadas por uma estrutura própria, iniciam com o sinal <i>“menor que”</i>, em seguida vem o nome 
+        daquele elemento e por fim, o sinal <i>“maior que”</i>. Podem ser dispostas em tags que precisam de fechamento 
+        e tags que fecham sozinhas (<i>self-closing</i>). O fechamento de uma tag será definido com uma barra (/), 
+        sendo que no caso das tags de autofechamento, não há necessidade da presença desse caractere.
+        <h4>Estrutura básica:
+            <ul>
+                <li>!DOCTYPE html: Informa ao navegador que esse documento é do tipo HTML e indica sua versão.</li>
+                <li>html: Representa a raiz do documento, serve com um container que engloba todos os outros elementos.</li>
+                <li>body: É onde fica todo o conteúdo de texto, imagem e vídeos, em que o usuário ou usuária vê e 
+                    interage, nele os conteúdos são estruturados pelas demais tags.</li>
+                <li>script: Esse elemento contém instruções de script ou aponta para um arquivo de script externo por 
+                    meio do atributo src.</li>
+                <li>head: Compreende as informações do documento que serão interpretadas pelo navegador (metadados).</li>
+                <li>meta: Define metadados, ou seja, informações sobre dados de um documento HTML.</li>
+                <li>link: É uma tag vazia, que contém apenas atributos e faz a relação do documento HTML com recursos 
+                    externos.</li>                
+                <li>style: Essa tag é usada para declarar estilos (CSS) para um documento.</li>
+                <li>Tags semânticas: são tags que possuem um significado, que dão sentido a informação de texto ao 
+                    navegador e buscadores.</li>
+                <li>Tags sem semântica: não possuem semântica não definem um significado para aquele texto, 
+                    normalmente são utilizadas apenas para fins de separação e estilização.</li>
+                <li>Comentários: ou em qualquer outra linguagem são notas que podem ser incluídas no código-fonte 
+                    para descrever o que quiser.</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </h4>
+        <h4>Atributos das tags</h4>
+        <p>São palavras especiais usadas dentro da tag de abertura para controlar o comportamento do elemento. Funcionam 
+            como um modificador de um tipo de elemento HTML. Com eles, podemos identificar melhor um elemento, informar 
+            qual arquivo aquela tag deve utilizar, indicar o tipo de um campo de texto, etc. A estrutura de um atributo é 
+            <strong>nome: <i>"valor"</i></strong>.
+            <ul>Os principais atributos são:
+                <li>class=”NomeDaClasse”</li>
+                <li>id=”NomeDoId”</li>
+                <li>src=”Link ou diretório da mídia"</li>
+                <li>alt=”Texto alternativo”</li>
+                <li>href=”Url”</li>
+                <li>lang=”Linguagem”</li>
+                <li>target=”blank”</li>
+            </ul>
+        </p>
+    </p>
+
+    <h2 id="diferencas">Entendendo a diferença entre listas ordenadas e não ordenadas<sup>(20)</sup></h2>
+    <small><a href="#sumario">▲</a></small>
+    <p>HTML tem três tipos de listas. <<strong>ol</strong>> mostra as listas ordenadas, enquanto <<strong>ul</strong>>, 
+        as desordenadas. E para fazer uma lista de definições use <<strong>dl</strong>>. Use os atributos type e start 
+        para fazer a sua lista, dependendo dos seus interesses.</p>
+
+    <h2 id="referencias">Links de referências</h2>
+    <small><a href="#sumario">▲</a></small>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece 
+        de que precisa abrir em outra aba/janela do navegador.</p>
+    <ul>
+        <li>1 - <a href="http://dio.me">http://dio.me</a></li>
+        <li>2 - <a href="#">http://w3c.org</a></li>
+        <li>3 - <a href="#">https://todamateria.com.br/historia-e-evolucao-dos-computadores/</a></li>
+        <li>4 - <a href="#">https://w3schools.com</a></li>
+        <li>5 - <a href="#">https://mundoeducacao.uol.com.br/informatica/evolucao-dos-computadores.htm</a></li>
+        <li>6 - <a href="#">https://www.diferenca.com/evolucao-dos-computadores/</a></li>
+        <li>7 - <a href="#">https://www3.unicentro.br/petfisica/2023/02/22/grace-hopper-1906-1992/</a></li>
+        <li>8 - <a href="#">http://www.tipografos.net/internet/licklider.htm</a></li>
+        <li>9 - <a href="#">https://vinfutureprize.org/laureates/dr-robert-elliot-kahn/</a></li>
+        <li>10 - <a href="#">https://canaltech.com.br/celebridade/tim-berners-lee/</a></li>
+        <li>11 - <a href="#">https://www.infopedia.pt/artigos/$marc-andreessen</a></li>
+        <li>12 - <a href="#">https://g4educacao.com/biografias/bill-gates</a></li>
+        <li>13 - <a href="#">https://canaltech.com.br/celebridade/steve-jobs/</a></li>
+        <li>14 - <a href="#">https://www.devmedia.com.br/http-cliente-e-servidor/41215</a></li>
+        <li>15 - <a href="#">https://rockcontent.com/br/talent-blog/aplicacao-web/</a></li>
+        <li>16 - <a href="#">https://meuartigo.brasilescola.uol.com.br/informatica/o-avanco-dos-dispositivos-moveis-usuario.htm</a></li>
+        <li>17 - <a href="#">https://www.controle.net/faq/o-que-sao-servidores</a></li>
+        <li>18 - <a href="#">https://www.qnapbrasil.com.br/blog/post/o-que-e-servidor-armazenamento-de-dados</a></li>
+        <li>19 - <a href="#">https://www.alura.com.br/artigos/o-que-e-html-suas-tags-parte-1-estrutura-basica/</a></li>
+        <li>20 - <a href="#">https://www.alura.com.br/apostila-html-css-javascript/06CA-usando-links-e-listas</a></li>
+    </ul>
+
+</body>
+</html>
